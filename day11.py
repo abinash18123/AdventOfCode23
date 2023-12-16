@@ -4,15 +4,11 @@ def process_input():
 	    rotated_matrix = [list(reversed(row)) for row in transposed_matrix]
 	    rotated_matrix = [i[::-1] for i in rotated_matrix]
 	    return rotated_matrix
-	import numpy as np
 	inputs = [(i.rstrip()).split(' ') for i in open("input.txt", "r")]
 	matrix = []
 	for i in inputs:
 		matrix.append([j for j in i[0]])
-	matrix = np.array(matrix)
 	rotated = rotate_clockwise(matrix)
-	matrix = np.array(matrix)
-	rotated = np.array(rotated)
 	return matrix,rotated
 
 def find_rc(matrix,rotated):
