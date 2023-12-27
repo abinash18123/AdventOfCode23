@@ -1,11 +1,10 @@
 def summ(n):
 	flag = 0 
 	finalNum = ''
-	nums = ['one','two','three','four','five','six','seven','eight','nine']
-	dic = {'one':str(1),'two':str(2),'three':str(3),'four':str(4),'five':str(5),'six':str(6),'seven':str(7),'eight':str(8),'nine':str(9)}
+	dic = {'one':'1','two':'2','three':'3','four':'4','five':'5','six':'6','seven':'7','eight':'8','nine':'9'}
 
 	timline = {}
-	for k in nums:
+	for k in dic.keys():
 		for num in range(0,len(n) - len(k) + 1):
 			number = n[num:num+len(k)]
 			if number == k:
